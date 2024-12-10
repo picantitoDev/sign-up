@@ -84,7 +84,7 @@ form{
 }
 
 .input-container{
-    margin-right: 50px;
+    margin-right: 65px;
     margin-top: 20px;
 }
 
@@ -92,7 +92,8 @@ input {
     appearance: none;
     border: 2px solid #E5E7EB;
     width: 300px;
-    height: 25px;
+    font-size: 1rem;
+    height: 30px;
     border-radius: 4px;
   }
 
@@ -131,10 +132,27 @@ button{
 
 .button-container{
     position: relative;
-    right: 19vw;
+    right: 19.5vw;
     top: 8vh;
 }
 
 strong{
     color: #596D48;   
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid #1e90ff;
+    box-shadow: 0 0 6px rgba(30, 144, 255, 0.5);
+    transition: box-shadow 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+
+input:invalid{
+    border: 2px solid red;
+}
+
+#error-msg{
+    font-size: smaller;
+    margin-top: -1px;
+    padding-top: 1px;
 }
